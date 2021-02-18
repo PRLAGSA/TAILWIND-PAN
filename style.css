@@ -1,11 +1,10 @@
+@tailwind base;
+@tailwind components;
 @font-face {
   font-family: "SSBOLD";
   src: url("./fonts/SourceSansPro-Bold.ttf");
   font-weight: bold;
 }
-
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 /*npx tailwindcss-cli@latest build ./src/style.css -o ./dist/style.css*/
