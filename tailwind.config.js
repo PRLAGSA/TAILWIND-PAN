@@ -29,14 +29,32 @@ module.exports = {
 
       padding: {
         283: "283px",
+        10: "10px",
+        60: "60px",
+        5: "5px",
+        4: "4px",
+        3: "3px",
+        2: "2px",
+        1: "1px",
       },
 
       margin: {
         283: "283px",
+        263: "263px",
+        60: "60px",
+        50: "50px",
+        5: "5px",
+        10: "10px",
+        15: "15px",
+        20: "20px",
       },
 
       borderRadius: {
         4: "4px",
+      },
+
+      borderWidth: {
+        10: "10px",
       },
 
       fontFamily: {
@@ -44,7 +62,29 @@ module.exports = {
       },
       fontSize: {
         14: "14px",
+        13: "13px",
+        12: "12px",
+        11: "11px",
+        10: "10px",
+        8: "8px",
       },
+
+      lineHeight: {
+        18: "18px",
+      },
+
+      textColor: (theme) => theme("colors"),
+      textColor: {
+        menuTextColor: "#002868",
+      },
+
+      borderColor: (theme) => ({
+        ...theme("colors"),
+        DEFAULT: theme("colors.gray.300", "currentColor"),
+        logoBorderColor: "#AB0427",
+        secondary: "#ffed4a",
+        danger: "#e3342f",
+      }),
 
       variants: {
         extend: {},
