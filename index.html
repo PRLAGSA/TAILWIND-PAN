@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts/SourceSansPro-Bold.ttf" />
     <title>Tailwind</title>
   </head>
@@ -13,56 +14,325 @@
     <header
       class="w-screen bg-header-background object-cover h-750 bg-no-repeat bg-cover bg-bottom"
     >
-      <div class="container mx-auto w-1360 h-200 bg-transparent">
-        <div class="container w-1360 h-70 bg-transparent"></div>
+      <!--MOBILE-MENU-->
+      <div class="bg-transparent lg:hidden grid relative top-10">
+        <div class="burger flex flex-row-reverse z-10">
+          <img
+            src="./images/burger.svg"
+            alt=""
+            class="w-24 h-24 mr-20 z-0 absolute right-10 sm:right-2"
+          />
+        </div>
+        <div class="flex justify-around z-0">
+          <div class="flex my-auto ml-20">
+            <div class="flex lg:hidden">
+              <img
+                src="./images/clock.png"
+                alt=""
+                class="flex mt-22 w-20 h-20"
+              />
+            </div>
+            <div class="grid lg:hidden bg-transparent grid">
+              <div
+                class="pl-6 relative -bottom-1 font-SourceSansBold text-12 font-bold text-white tracking-2 ml-1"
+              >
+                ΑΡΚΑΔΙΑ
+              </div>
+              <div
+                class="pl-5 relative top-0 bottom-7 font-PROXIMANOVAREGULAR text-26 leading-32 text-white"
+              >
+                13:28
+              </div>
+            </div>
+          </div>
+          <img src="./images/logoMobile.svg" alt="" />
+          <div class="flex my-auto">
+            <div class="flex lg:hidden md:bg-transparent">
+              <img
+                src="./images/cloud-snow.png"
+                alt=""
+                class="flex mt-22 w-20 h-20"
+              />
+            </div>
+            <div class="flex lg:hidden md:bg-transparent grid">
+              <div
+                class="pl-10 relative -bottom-1 font-SourceSansBold text-12 font-bold text-white tracking-2"
+              >
+                ΚΑΤΑΙΓΙΔΑ
+              </div>
+              <div
+                class="flex lg:hidden pl-5 md:pl-5 relative -top-0 bottom-0 font-PROXIMANOVAREGULAR text-26 leading-32 text-white"
+              >
+                12°C<a class="opacity-0.4">°F</a>
+              </div>
+            </div>
+          </div>
+          <!--STORM-->
+        </div>
+        <!--PAF-->
+        <div class="flex justify-center mt-10">
+          <img src="./images/PAF.svg" alt="" class="flex justify-center" />
+        </div>
+        <!--PAF END-->
+      </div>
+      <!--MOBILE-MENU-END-->
+      <div class="md:grid container mx-auto lg:w-1360 lg:h-200 bg-transparent">
+        <!--TEMERATURE -HEADER -->
+        <div class="container flex md:w-1360 md:h-70 bg-transparent">
+          <div
+            class="hidden lg:container sm: hidden lg:flex bg-green-400 relative h-44 justify-between top-14 sm:hidden md:hidden lg:flex xl:flex 2xl:flex"
+          >
+            <div class="flex ml-255">
+              <div class="hidden lg:flex md:bg-transparent">
+                <img
+                  src="./images/clock.png"
+                  alt=""
+                  class="flex mt-17 w-20 h-20"
+                />
+              </div>
+              <div class="hidden lg:flex bg-transparent grid">
+                <div
+                  class="pl-6 relative bottom-2 font-SourceSansBold text-12 font-bold text-white tracking-2 ml-1"
+                >
+                  ΑΡΚΑΔΙΑ
+                </div>
+                <div
+                  class="pl-5 absolute top-12 bottom-7 font-PROXIMANOVAREGULAR text-26 leading-32 text-white"
+                >
+                  13:28
+                </div>
+              </div>
+              <div class="flex ml-20">
+                <div class="hidden lg:flex md:bg-transparent">
+                  <img
+                    src="./images/cloud-snow.png"
+                    alt=""
+                    class="flex mt-17 w-20 h-20"
+                  />
+                </div>
+                <div class="hidden lg:flex md:bg-transparent grid">
+                  <div
+                    class="pl-10 relative bottom-2 font-SourceSansBold text-12 font-bold text-white tracking-2"
+                  >
+                    ΚΑΤΑΙΓΙΔΑ
+                  </div>
+                  <div
+                    class="hidden lg:flex md:pl-5 absolute top-12 bottom-7 font-PROXIMANOVAREGULAR text-26 leading-32 text-white"
+                  >
+                    12°C<a class="opacity-0.4">°F</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div
+                class="hidden sm:hidden md:hidden lg:flex md:bg-transparent my-auto flex my-auto"
+              >
+                <img
+                  src="./images/USERSVGTAILWINDWHITE.svg"
+                  alt=""
+                  class="pr-5"
+                />
+                <div
+                  class="bottom-0 relative pr-42 font-SourceSansReg text-white font-bold text-white cursor-pointer"
+                >
+                  <a
+                    href="#"
+                    class="hidden md:flex md:font-SourceSansReg font-bold text-white cursor-pointer text-12 relative pt-3"
+                    >Εγγραφή / Σύνδεση</a
+                  >
+                </div>
+              </div>
+              <div class="hidden lg:flex md:bg-transparent my-auto">
+                <img
+                  src="./images/FLAGSVD-TAILWIND.svg"
+                  alt=""
+                  class="w-28 h-20 my-auto"
+                />
+              </div>
+              <div
+                class="hidden lg:flex md:bg-transparent my-auto 2xl:pr-37 xl:pr-10 pl-4"
+              >
+                <img
+                  src="./images/DOWNWHITESVG-TAILWIND.svg"
+                  alt=""
+                  class="cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--TEMERATURE -HEADER END-->
         <!--MENU ITEMS-->
-        <div class="container flex flex-row rounded-4 w-1360 h-60 bg-white">
+        <div
+          class="hidden md:container md:flex flex-row rounded-4 w-1360 h-60 bg-transparent lg:bg-white"
+        >
           <!--LOGO-->
           <div
-            class="absolute top-0 pt-0 ml-60 border-10 rounded-full border-logoBorderColor"
+            class="hidden lg:absolute lg:block top-0 pt-0 sm:my-auto lg:ml-60 lg:border-10 rounded-full border-logoBorderColor z-10"
           >
-            <img src="./images/LOGOSVGTAILWIND.svg" alt="" />
+            <img
+              src="./images/LOGOSVGTAILWIND.svg"
+              alt=""
+              class="hidden lg:block"
+            />
           </div>
           <!--LOGO END-->
-          <ul
-            class="align-middle flex flex-row my-auto bg-white w-1038 h-24 ml-283 md:ml-263 lg:ml-263 xl:ml-283 2xl:ml-283 justify-between text-white font-SourceSansBold sm:text-10 md:text-8 lg:text-11 xl:text-14 2xl:text-14 text-center font-bold text-menuTextColor"
-          >
-            <a href="#"
-              ><li class="pt-3 xl:-ml-0 2xl:-ml-0 2xl:pt-3 lg:pt-4 xl:pt-3">
-                Η ΟΜΟΣΠΟΝΔΙΑ
-              </li></a
+          <div class="bg-white content-center my-auto justify-between w-1360">
+            <ul
+              class="hidden lg:align-middle flex flex-row my-auto bg-transparent 2xl:w-1014 2xl:pr-37 xl:pr-10 xl:w-1036 lg:w-1014 h-24 ml-245 md:ml-245 lg:ml-245 xl:ml-245 2xl:ml-245 justify-between text-white font-SourceSansBold sm:hidden lg:flex md:text-8 lg:text-10 xl:text-14 2xl:text-14 text-center font-bold text-menuTextColor"
             >
-            <a href="#"
-              ><li class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3">ΑΡΚΑΔΩΝ ΕΡΓΑ</li></a
-            >
-            <a href="#"
-              ><li class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3">
-                ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ
-              </li></a
-            >
-            <a href="#"
-              ><li class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3">ΝΕΑ - ΕΝΗΜΕΡΩΣΗ</li></a
-            >
-            <a href="#"
-              ><li class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3">
-                ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ
-              </li></a
-            >
-            <a href="#"
-              ><li class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3">
-                ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ
-              </li></a
-            >
-            <a
-              href="#"
-              class="my-auto xl:mr-20 2xl:-mr-20 md:w-20 md:h-20 lg:w-18 h-18 xl:w-20 h-20 2xl:w-24 h-24 2xl:pt-0 xl:pt-3 lg:pt-3"
-              ><img src="./images/mail.svg" alt=""
-            /></a>
-          </ul>
+              <a href="#">
+                <li
+                  class="dropdown pt-3 xl:-ml-0 2xl:-ml-0 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  <p class="z-10 ml-38">Η ΟΜΟΣΠΟΝΔΙΑ</p>
+                  <div class="wrapper">
+                    <div
+                      class="dropdown-menu absolute mainWrapper hidden pb-20 w-180 bg-transparent text-transparent"
+                    >
+                      asasasasasasasassasas
+                    </div>
+                    <div
+                      class="dropdown-menu hidden absolute top-140 z-30 w-230 h-352 bg-white rounded-4 grid z-20"
+                    >
+                      <div
+                        class="flex justify-center content-center border-b border-divider h-58 leading-17 pt-20 font-SourceSansBold text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΜΕΛΗ PFA
+                      </div>
+                      <div
+                        class="flex justify-center content-center border-b border-divider p-20 h-58 leading-17 text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΟΙ ΑΞΙΕΣ ΜΑΣ
+                      </div>
+                      <div
+                        class="flex justify-center content-center border-b border-divider pt-20 pb-20 h-58 leading-17 text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΤΟ ΟΡΑΜΑ ΜΑΣ
+                      </div>
+                      <div
+                        class="flex justify-center content-center border-b border-divider pt-20 pb-20 h-58 leading-17 text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΑΠΟΣΤΟΛΗ ΜΑΣ
+                      </div>
+                      <div
+                        class="flex justify-center content-center border-b border-divider pt-20 pb-20 h-58 leading-17 text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΠΟΡΕΙΑ ΕΞΕΛΙΞΗ
+                      </div>
+                      <div
+                        class="flex justify-center content-center pt-20 pb-20 h-58 leading-17 text-LinkColor hover:text-menuHOVERColor"
+                      >
+                        ΙΣΤΟΡΙΑ
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </a>
+
+              <a href="#"
+                ><li
+                  class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  ΑΡΚΑΔΩΝ ΕΡΓΑ
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  ΕΠΩΝΥΜΟΙ ΑΡΚΑΔΕΣ
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  ΝΕΑ - ΕΝΗΜΕΡΩΣΗ
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  ΕΠΙΣΚΕΨΗ ΣΤΗΝ ΑΡΚΑΔΙΑ
+                </li></a
+              >
+              <a href="#"
+                ><li
+                  class="pt-3 2xl:pt-3 lg:pt-4 xl:pt-3 hover:text-menuHOVERColor"
+                >
+                  ΑΝΑΖΗΤΗΣΕΙΣ ΣΤΗΝ ΑΡΚΑΔΙΑ
+                </li></a
+              >
+              <a href="#" class="my-auto"
+                ><img src="./images/mail.svg" alt="" class="md:w-20 h-20"
+              /></a>
+            </ul>
+          </div>
         </div>
         <!--MENU ITEMS END-->
-        <div class="container mx-auto w-1360 h-70 bg-transparent"></div>
+
+        <!--HOVER--MENU-->
+
+        <!--HOVER--MENU--END-->
+
+        <!--Pan-Arcadian Federation-->
+        <div
+          class="hidden lg:block container mx-auto w-1360 h-70 bg-transparent mt-20"
+        >
+          <img
+            src="./images/PAF.png"
+            alt=""
+            class="hidden lg:block ml-256 z-0 relative"
+          />
+        </div>
+        <!--Pan-Arcadian Federation END-->
       </div>
+      <!--CIRCLE -->
+      <div class="mx-auto flex justify-center my-auto">
+        <div class="pt-4">
+          <img
+            src="./images/CIRCLESVG---NOSHADOW.svg"
+            alt=""
+            class="w-365 h-365 md:w-450 md:h-450 border-2 border-white rounded-full mt-110 md:-mt-14 lg:mt-0 lg:w-450 lg:h-450 lg:border-6 lg:border-white lg:rounded-full"
+          />
+        </div>
+        <!-- TEXT -->
+
+        <img
+          src="./images/GREEKSVG.svg"
+          alt=""
+          class="hidden lg:flex absolute pt-48"
+        />
+        <div
+          class="hidden lg:flex absolute pt-82 font-SourceSansBold text-12 text-white tracking-2 ShadowOnHoverMenu"
+        >
+          ΚΑΛΩΣ ΗΛΘΑΤΕ
+        </div>
+        <div
+          class="hidden lg:flex absolute pt-123 font-SourceSansBold text-24 text-white"
+        >
+          Η αποστολή μας
+        </div>
+        <div
+          class="hidden lg:flex absolute w-385 h-130 pt-184 font-SourceSansReg text-16 text-white text-center font-normal leading-25 pl-20 pr-20"
+        >
+          Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη
+          κερδοσκοπικού αδελφό ελληνικό-αμερικανική οργάνωση τα μέλη της οποίας
+          κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια
+          Ελλάδα …
+        </div>
+        <button
+          class="hidden lg:block absolute w-198 h-48 mt-344 lg:border-1 lg:text-center mx-auto my-auto lg:content-center rounded-4 font-SourceSansBold text-14 text-white"
+        >
+          ΠΕΡΙΣΣΟΤΕΡΑ
+        </button>
+        <!--TEXT - END-->
+      </div>
+      <!--CIRCLE END-->
     </header>
   </body>
 </html>
