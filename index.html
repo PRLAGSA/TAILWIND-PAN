@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./fonts/SourceSansPro-Bold.ttf" />
     <title>Tailwind</title>
+    <script src="./indexx.js"></script>
   </head>
 
   <body>
@@ -16,12 +17,34 @@
     >
       <!--MOBILE-MENU-->
       <div class="bg-transparent lg:hidden grid relative top-10">
-        <div class="burger flex flex-row-reverse z-10">
+        <div class="flex flex-row-reverse z-10">
           <img
+            onclick="buttonOnClickBurger()"
             src="./images/burger.svg"
             alt=""
-            class="w-24 h-24 mr-0 sm:mr-20 z-0 absolute right-10 sm:right-2"
+            class="w-24 h-24 mr-0 sm:mr-20 z-0 absolute right-10 sm:right-2 cursor-pointer"
           />
+
+          <!--BURGER-MENU START-->
+
+          <div
+            class="hidden lg:hidden absolute h-screen bg-green-400 -top-3 w-screen"
+            id="burgerXXX"
+          >
+            <div class="grid h-359 w-300 right-0 absolute">
+              <div class="h-45 bg-gray-600 flex w-300 h-45 justify-between">
+                <div class="flex">
+                  <button onclick="buttonOnClickBurger()">X</button>
+                </div>
+                <div class="flex">
+                  <button onclick="buttonOnClickBurger()">X</button>
+                  <button onclick="buttonOnClickBurger()">X</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--BURGER MENU END-->
         </div>
         <div class="flex justify-around z-0">
           <div class="flex my-auto ml-20">
