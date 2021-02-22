@@ -69,6 +69,7 @@ module.exports = {
         20: "20px",
         28: "28px",
         18: "18px",
+        12: "14px",
       },
 
       padding: {
@@ -90,6 +91,9 @@ module.exports = {
         37: "37px",
         32: "32px",
         29: "29px",
+        20: "20px",
+        15: "15px",
+        11: "11px",
         7: "7px",
         6: "6px",
         5: "5px",
@@ -145,6 +149,7 @@ module.exports = {
         15: "15px",
         14: "14px",
         12: "12px",
+        11: "11px",
         10: "10px",
         22: "22px",
         20: "20px",
@@ -215,6 +220,11 @@ module.exports = {
       boxShadow: {
         ShadowOnHoverMenu: "0px 20px 40px rgba(0, 0, 0, 0.35)",
       },
+
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+        MobileMenutopTab: "#979797",
+      }),
 
       textColor: (theme) => theme("colors"),
       textColor: {
