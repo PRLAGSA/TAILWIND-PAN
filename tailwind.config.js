@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "header-background": "url('/images/bg.png')",
+        "section2-background": "url('/images/fireworks-bg.png')",
       }),
       screens: {
         xs: "475px",
@@ -14,6 +15,7 @@ module.exports = {
       height: {
         753: "753px",
         750: "750px",
+        744: "744px",
         500: "500px",
         1360: "1360px",
         1038: "1038px",
@@ -160,6 +162,7 @@ module.exports = {
       },
 
       inset: {
+        760: "760px",
         275: "275PX",
         245: "245px",
         243: "243px",
