@@ -11,3 +11,15 @@ function buttonOnClickBurger() {
 }
 
 ////////////////////////////////////////////////////
+
+function omospondia() {
+  const omolink = document.getElementById("epistrofi");
+
+  if (omolink.style.display === "hidden" || omolink.style.display === "") {
+    omolink.style.display = "block";
+  } else if (omolink.style.display === "block") {
+    omolink.style.display = "none";
+  } else {
+    omolink.style.display = "block";
+  }
+}

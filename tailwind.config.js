@@ -12,10 +12,12 @@ module.exports = {
       },
 
       height: {
+        753: "753px",
         750: "750px",
         500: "500px",
         1360: "1360px",
         1038: "1038px",
+        482: "482px",
         480: "480px",
         450: "450px",
         385: "385px",
@@ -58,6 +60,7 @@ module.exports = {
         330: "330px",
         320: "320px",
         300: "300px",
+        290: "290px",
         280: "280px",
         230: "230px",
         219: "219px",
@@ -138,6 +141,7 @@ module.exports = {
         44: "44px",
         38: "38px",
         30: "30px",
+        26: "26px",
         7: "7px",
         6: "6px",
         5: "5px",
@@ -223,7 +227,7 @@ module.exports = {
 
       backgroundColor: (theme) => ({
         ...theme("colors"),
-        MobileMenutopTab: "#979797",
+        MobileMenutopTab: "#F8F8F8",
       }),
 
       textColor: (theme) => theme("colors"),
