@@ -11,7 +11,7 @@
     <script src="./indexx.js"></script>
   </head>
 
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden mr-20">
     <header
       class="w-screen bg-header-background object-cover h-480 sm:h-750 bg-no-repeat bg-cover bg-bottom"
     >
@@ -557,11 +557,11 @@
       <!--CIRCLE END-->
     </header>
 
-    <div class="flex justify-center relative">
+    <div class="hidden sm:flex justify-center relative ">
       <img
         src="./images/colored.png"
         alt=""
-        class="flex justify-center z-0 absolute top-10 ml-60"
+        class="justify-center z-0 absolute top-10 pl-60 bottom-center hidden md:flex"
       />
       <img
         src="./images/tree.svg"
@@ -570,35 +570,44 @@
       />
     </div>
     <div
-      class="flex justify-center ml-20 mt-32 font-SourceSansBold text-menuHOVERColor text-48"
+      class="hidden sm:flex justify-center relative ml-20 mt-32 font-SourceSansBold text-menuHOVERColor text-34 md:text-48"
     >
       Μετριόμαστε, γιατί μετράμε!
     </div>
+    <div class="hidden sm:flex justify-center text-center font-SourceSansBold text-18 lg:hidden pt-37 text-menuTextColor ">Γενική απογραφή  των αποδήμων Αρκάδων στις ΗΠΑ <br> και επαναπατρισθέντων από τις ΗΠΑ</div>
+
+    <div class="hidden sm:flex justify-center text-center font-SourceSansReg text-16 text-gray333 pt-20 lg:hidden text-gray333">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων<br> που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). </div>
+    <div class="hidden sm:flex justify-center text-center lg:hidden pt-20 lg:hidden font-SourceSansBold text-16 text-gray333 ">Το αποτύπωμα της Αρκαδικής γης μας συνδέει!</div>
+    <div class="hidden sm:flex justify-center text-center lg:hidden pt-20 lg:hidden text-gray333">Όση χιλιομετρική απόσταση και<br> αν μας χωρίζει, όσες γενιές και να </div>
     
-    <div class="grid justify-center mt-35 ml-20 overflow-visible">
+    
+    <div class="grid justify-center mt-35 ml-20 ">
       <div
-        class="flex justify center content-center mx-auto relative overflow-visible"
+        class="flex justify center content-center mx-auto relative "
       >
-        <div class="w-464 h-235 bg-transparent mr-30 overflow-visible">
+
+      
+        
+        <div class=" h-235 bg-transparent mr-30 hidden lg:block ">
           <div
-            class="overflow-x-visible font-SourceSansBold text-18 text-menuTextColor"
+            class=" font-SourceSansBold text-18 text-menuTextColor"
           >
-            Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και επαναπατρισθέντων
+            Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και <br> επαναπατρισθέντων
             από τις ΗΠΑ
           </div>
           <div class="pl-4 font-SourceSansReg text-16 mt-20 text-gray333">
-            Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή των Αρκάδων
-            που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας).
+            Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή <br> των Αρκάδων
+            που διαμένουν και εργάζονται στις ΗΠΑ, (ανεξαρτήτως <br> υπηκότητας).
           </div>
           <div class="pl-4 font-SourceSansBold text-16 mt-10 text-gray333">
             Το αποτύπωμα της Αρκαδικής γης μας συνδέει!
           </div>
           <div class="pl-4 font-SourceSansReg text-16 mt-15 text-gray333">
-            Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να
+            Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να<br>
             έχουμε...ψηλώσει πέρα απο τις ρίζες μας, η Αρκαδία, μας ενώνει!
           </div>
         </div>
-        <div class="w-475 h-235 bg-transparent ml-30">
+        <div class=" h-235 bg-transparent ml-30 hidden lg:block">
           <div
             class="overflow-x-visible font-SourceSansBold text-18 text-menuTextColor ml-5"
           >
@@ -620,7 +629,7 @@
           <div class="flex mt-5">
             <img src="images/RIGHTSVGDARK.svg" alt="" class="w-14 pb-29 text-menuTextColor" />
             <div class="font-SourceSansReg text-16 text-gray333">
-              Για να είμαστε χρήσιμοι και να  παρεμβαίνουμε δημιουργικά για τις ΗΠΑ την Ελλάδα και την Αρκαδία.
+              Για να είμαστε χρήσιμοι και να  παρεμβαίνουμε δημιουργικά για τις<br> ΗΠΑ την Ελλάδα και την Αρκαδία.
             </div>
           </div>
            <div class="flex ">
@@ -639,9 +648,20 @@
         </div>
        
     </div>
+
+    <div class="flex justify-center -top-30 relative w-219 h-116 sm:hidden ml-20"><img src="./images/tree.svg" alt=""></div>
+    <div class="flex justify-center sm:hidden">
+        <div class="mt-30 font-SourceSansBold text-34 text-menuHOVERColor text-center ">
+            Μετριόμαστε,<br>
+           γιατί μετράμε!</div>
+       </div>
+<p class="flex justify-center text-center sm:hidden pt-14 font-SourceSansBold text-18 text-menuTextColor">Γενική απογραφή  των αποδήμων<br> Αρκάδων στις ΗΠΑ και<br> επαναπατρισθέντων από τις ΗΠΑ</p>
+<p class="flex justify-center text-center text-16 font-SourceSansReg sm:hidden mt-20 ">Η Παναρκαδική Ομοσπονδία Αμερικής<br> πραγματοποιεί απογραφή των Αρκάδων<br> που διαμένουν και εργάζονται στις ΗΠΑ,<br> (ανεξαρτήτως υπηκότητας). </p>
+       
    <div class="grid justify-center">
        <p class="mt-30 font-SourceSansBold text-menuHOVERColor text-18 flex justify-center ">ΤΕΛΕΤΗ ΕΝΑΡΞΗΣ</p>
-       <p class="mt-5 font-SourceSansBold text-menuTextColor text-34 ">Παρασκευή 20 Απριλίου 2018</p>
+       <p class="hidden mt-5 font-SourceSansBold text-menuTextColor text-24 sm:flex sm:text-34 ">Παρασκευή 20 Απριλίου 2018</p>
+       <p class="mt-5 font-SourceSansBold text-menuTextColor text-24 sm:hidden flex text-center">Παρασκευή<br> 20 Απριλίου 2018</p>
        <p class=" mt-9 flex justify-center text-menuTextColor  font-SourceSansBold text-18 ">ΝΕΑ ΥΟΡΚΗ</p>
    </div>
   </body>
