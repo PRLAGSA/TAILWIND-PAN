@@ -27,6 +27,7 @@ module.exports = {
         457: "457px",
         450: "450px",
         421: "421px",
+        394: "394px",
         385: "385px",
         365: "365px",
         359: "359px",
@@ -90,6 +91,7 @@ module.exports = {
         180: "180px",
         170: "170px",
         140: "140px",
+        130: "130px",
 
         24: "24px",
         20: "20px",
@@ -225,6 +227,7 @@ module.exports = {
         14: "14px",
         13: "13px",
         12: "12px",
+        11: "11px",
         10: "10px",
         7: "7px",
         2: "2px",
@@ -297,6 +300,7 @@ module.exports = {
         menuHOVERColor: "#BF0A30",
         LinkColor: "#002868",
         gray333: "#333333",
+        inputColor: "#999999",
       },
 
       borderColor: (theme) => ({
@@ -306,6 +310,9 @@ module.exports = {
         divider: "#eeeeee",
         secondary: "#ffed4a",
         danger: "#e3342f",
+        formBorder: "#B6B6B6",
+        topFormBottom1px: "#979797",
+        inputColor: "#999999",
       }),
 
       variants: {
