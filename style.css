@@ -24,3 +24,8 @@
   display: block;
   margin-right: 500px;
 }
+
+.scrollBar {
+  overflow: scroll;
+  overflow-x: hidden;
+}
